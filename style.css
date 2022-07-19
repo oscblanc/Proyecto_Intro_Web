@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: white;
+    font-family: 'arial';
+    font-size: smaller;
+}
+/*Formato del header*/
+header{
+    display: flex;
+    height: 70px;
+    background-color: #444242;
+    justify-content: space-between;
+    align-items: right;
+    padding: 10px;
+}
+/*Tamaño de imagen*/
+img{
+    width: 120px;
+    float: left;
+    padding: 8px;
+}
+/*Estilos a la caja del login*/
+.form-login {
+    width: 400px;
+    height: 340px;
+    background: white;
+    margin: auto;
+    margin-top: 180px;
+    box-shadow: 7px 13px 37px grey;
+    padding: 20px 30px;
+    color: grey;
+}
+/*Estilos a las entradas de texto*/
+.controls {
+    width: 100%;
+    border: 1px solid grey;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: white;
+    font-size: 14px;
+}
+/*Estilos al botón del botón enviar*/
+.button2 {
+    width: 100%;
+    height: 40px;
+    background: rgb(0, 110, 255);
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+/*Estilos al texto "¿Olvidó su contraseña?"*/
+.form-login a {
+    color: rgb(0, 110, 255);
+    text-decoration: none;
+    font-size: 14px;
+}
+.form-login a:hover {
+    text-decoration: underline;
+}
