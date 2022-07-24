@@ -1,64 +1,112 @@
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
-
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 body{
+    font-family: "Lato", "Helvetica", "Arial";
+    font-size: 12px;
     background: white;
-    font-family: 'arial';
-    font-size: smaller;
+}
+.label1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: rgb(35, 35, 51);
+    padding: 15px 5%;
 }
 /*Formato del header*/
 header{
     display: flex;
-    height: 70px;
-    background-color: #444242;
-    justify-content: space-between;
-    align-items: right;
-    padding: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom-style: solid;
+    border-color: rgb(163, 163, 163);
+    border-width: 1px;
 }
 /*Tamaño de imagen*/
-img{
+.logo{
+    cursor: pointer;
+    margin-right: auto;
     width: 120px;
     float: left;
     padding: 8px;
 }
-/*Estilos a la caja del login*/
-.form-login {
-    width: 400px;
-    height: 340px;
-    background: white;
-    margin: auto;
-    margin-top: 180px;
-    box-shadow: 7px 13px 37px grey;
-    padding: 20px 30px;
-    color: grey;
+.extra__links{
+    list-style: none;
 }
-/*Estilos a las entradas de texto*/
-.controls {
-    width: 100%;
-    border: 1px solid grey;
-    margin-bottom: 15px;
-    padding: 11px 10px;
-    background: white;
-    font-size: 14px;
+.extra__links li{
+    display: inline-block;
+    padding: 0px 10px;
 }
-/*Estilos al botón del botón enviar*/
-.button2 {
-    width: 100%;
-    height: 40px;
-    background: rgb(0, 110, 255);
+.nav__links1{
+    list-style: none;
+    padding-right: 350px;
+}
+.nav__links2{
+    list-style: none;
+    padding: 0px 10px;
+}
+.nav__links1 li{
+    display: inline-block;
+    padding: 0px 10px;
+}
+.nav__links2 li{
+    display: inline-block;
+    padding: 0px 10px;
+}
+.nav__links1 li a:hover{
+    color: aqua;
+}
+.nav__links2 li a:hover{
+    color: rgba(255, 68, 0, 0.692);
+}
+button{
+    margin-left: 5px;
+    padding: 9px 9px;
+    background-color: rgb(211, 111, 53);
     color: white;
-    border-radius: 8px;
-    margin-bottom: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
-/*Estilos al texto "¿Olvidó su contraseña?"*/
-.form-login a {
-    color: rgb(0, 110, 255);
-    text-decoration: none;
-    font-size: 14px;
+button:hover{
+    background-color:rgb(214, 79, 0);
 }
-.form-login a:hover {
-    text-decoration: underline;
+/*PRUEBA*/
+.card{
+    background-color: rgba(240, 234, 234, 0.42);
+    box-shadow: 0 0 0.9375em rgba(0, 0, 0, 0.219);
+    width: 900px;
+    border-radius: 4px;
+    display: flex;
+}
+.card-hero{
+    flex: 0 0 50%;
+    position: relative;
+}
+.card-img{
+    display: block;
+    width: 100%;
+}
+.card-middle{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card-middle-text{
+    background-color: transparent;
+    align-content: center;
+}
+.form-login{
+    flex:1;
+    padding: 35px 35px 25px 35px;
 }
