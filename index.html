@@ -37,28 +37,115 @@
     <main>
         <section>
             <figure class="card">
-                <div class="card-hero">
+                <div class="card-left">
                     <img class="card-img" src="./img/aviones.png" alt="">
-                    <div class="card-middle">
-                        <h1 class="card-middle-text">INGRESAR</h1>
-                        <h3>¡Le damos nuevamente la bienvenida!</h3>
-                        <h3>¿Es nuevo en Zoom? <a href="#">Registrese gratis</a></h3>
+                    <div class="left-text">
+                        <h1 class="ingresar">INGRESAR</h1>
+                        <h3 class="bienvenido">¡Le damos nuevamente la bienvenida!</h3>
+                        <h3 class="nuevo">¿Es nuevo en Zoom? <a href="#">Registrese gratis</a></h3>
 
                     </div>
                 </div>
-                <div class="form-login">
+                <div class="card-right">
                     <h3>Dirección de correo electrónico</h3>
                     <input class="controls" type="email" name="correo" id="correo" placeholder="Dirección de correo electrónico">
-                    <h3>Contraseña <a href="#">¿Olvidó su Contraseña?</a></h3>
+                    <h3>Contraseña <a href="#" class="space-c">¿Olvidó su Contraseña?</a></h3>
                     <input class="controls" type="password" name="correo" id="correo" placeholder="Contraseña">
+                    <h3>Mediante este inicio de sesión, acepto la <a href="#">Política de privacidad de Zoom</a> y los <a href="#">Términos de servicio.</a></h3>
                     <input class="button2" type="submit" name="" value="Ingresar">
+                    <label class="container">
+                        <input type="checkbox" checked="checked"> No cerrar su cuenta
+                        <span class="checkmark"></span>
+                      </label>
+                    <h4>O inicie sesión con</h4>
+                    <ul class="social-media">
+                        <div>
+                            <li><img src="./img/sso.PNG" alt=""></li>
+                            <h3 class="media-title">SSO</h3>
+                        </div>
+                        <div>
+                            <li><img src="./img/Apple.png" alt=""></li>
+                            <h3 class="media-title">Apple</h3>
+                        </div>
+                        <div>
+                            <li><img src="./img/Google.png" alt=""></li>
+                            <h3 class="media-title">Google</h3>
+                        </div>
+                        <div>
+                            <li><img src="./img/facebook.png" alt=""></li>
+                            <h3 class="media-title">Facebook</h3>
+                        </div>
+                    </ul>
+                    <h3>Zoom está protegido por reCAPTCHA y se aplican su <a href="#">Política de privacidad</a> y los <a href="#">Términos del servicio.</a></h3>
                 </div>
             </figure>
         </section>
     </main>
     <!--Formulario-->
     <footer>
-        <h1>PIE DE PAGINA</h1>
+        <nav class="footer-card">
+            <ul class="f-list">
+                <li class="list-title"><a href="#">Acerca de</a></li>
+                <li><a href="#">Blog de Zoom</a></li>
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#">Nuestro equipo</a></li>
+                <li><a href="#">Carreras</a></li>
+                <li><a href="#">Integraciones</a></li>
+                <li><a href="#">Socios</a></li>
+                <li><a href="#">Inversores</a></li>
+                <li><a href="#">Prensa</a></li>
+                <li><a href="#">Responsabilidad de ESG</a></li>
+                <li><a href="#">kit multimedia</a></li>
+                <li><a href="#">Videos instructivos</a></li>
+                <li><a href="#">Plataforma para desarrolladores</a></li>
+                
+            </ul>
+            <ul class="f-list">
+                <li class="list-title"><a href="#">Descargar</a></li>
+                <li><a href="#">Cliente de reuniones</a></li>
+                <li><a href="#">Cliente de Zoom Rooms</a></li>
+                <li><a href="#">Extensión de navegador</a></li>
+                <li><a href="#">Complemento de Outlook</a></li>
+                <li><a href="#">Complemento de Lync</a></li>
+                <li><a href="#">Aplicación de Android</a></li>
+                <li><a href="#">Fondos virtuales de Zoom</a></li>
+            </ul>
+            <ul class="f-list">
+                <li class="list-title"><a href="#">Ventas</a></li>
+                <li><a href="#">1.888.799.9666</a></li>
+                <li><a href="#">Contactarse con ventas</a></li>
+                <li><a href="#">Planes y precios</a></li>
+                <li><a href="#">Solicite una demostración</a></li>
+                <li><a href="#">Seminarios web y eventos</a></li>
+            </ul>
+            <ul class="f-list">
+                <li class="list-title"><a href="#">Soporte</a></li>
+                <li><a href="#">Probar Zoom</a></li>
+                <li><a href="#">Cuenta</a></li>
+                <li><a href="#">Centro de soporte</a></li>
+                <li><a href="#">Capacitación en vivo</a></li>
+                <li><a href="#">Comentarios</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Accesibilidad</a></li>
+                <li><a href="#">Soporte para desarrolladores</a></li>
+                <li><a href="#">Privacidad, seguridad y políticas legales y declaración de transparencia de la ley sobre la esclavitud moderna</a></li>
+                <li><a href="#">Soporte para desarrolladores</a></li>
+            </ul>
+            <ul class="f-list">
+                <li><a href="#">Idioma</a></li>
+                <li><a href="#">Moneda</a></li>
+            </ul>
+        </nav>
+        <ul class="f-low">
+            <li>Copyright ©2022 Zoom Video Communications, Inc. Todos los derechos reservados.</li>
+            <li><a href="#">Términos</a></li>
+            <li><a href="#">Privacidad</a></li>
+            <li><a href="#">Centro de confianza</a></li>
+            <li><a href="#">Estándares comunitarios</a></li>
+            <li><a href="#">Legal y cumplimiento</a></li>
+            <li><a href="#">No vender mis datos personales</a></li>
+            <li><a href="#">Preferencias de cookies</a></li>
+        </ul>
     </footer>
 </body>
 </html>

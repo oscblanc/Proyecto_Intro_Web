@@ -8,12 +8,7 @@ body{
     font-size: 12px;
     background: white;
 }
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/*Formato del label gris superior*/
+/*Empieza estilo del label gris superior*/
 .label1{
     display: flex;
     justify-content: flex-end;
@@ -21,12 +16,17 @@ main{
     background: rgb(35, 35, 51);
     padding: 15px 5%;
 }
-/*Formato del header*/
+.label1 ul li a{
+    text-decoration: none;
+    color: white;
+}
+/*Termina estilo del label gris superior*/
+/*Empieza estilo del header*/
 header{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 20px 5%;
+    padding: 15px 5%;
     border-bottom-style: solid;
     border-color: rgb(163, 163, 163);
     border-width: 1px;
@@ -48,7 +48,7 @@ header{
 }
 .nav__links1{
     list-style: none;
-    padding-right: 350px;
+    padding-right: 500px;
 }
 .nav__links2{
     list-style: none;
@@ -62,16 +62,21 @@ header{
     display: inline-block;
     padding: 0px 10px;
 }
-.nav__links1 li a:hover{
-    color: aqua;
+.nav__links1 li a{
+    text-decoration: none;
+    color: grey;
 }
-.nav__links2 li a:hover{
-    color: rgba(255, 68, 0, 0.692);
+.nav__links2 li a{
+    text-decoration: none;
+    color: rgb(0, 110, 255);
+}
+.nav__links1 li a:hover{
+    color: rgb(0, 110, 255);
 }
 button{
     margin-left: 5px;
-    padding: 9px 9px;
-    background-color: rgb(211, 111, 53);
+    padding: 9px 15px;
+    background-color: rgb(252, 114, 34);
     color: white;
     border: none;
     border-radius: 5px;
@@ -79,43 +84,79 @@ button{
     transition: all 0.3s ease 0s;
 }
 button:hover{
-    background-color:rgb(214, 79, 0);
+    background-color: rgb(214, 79, 0);
 }
-/*Card*/
-.form-login{
-    flex:1;
-    padding: 35px 35px 25px 35px;
-    background-color: white;
+/*Termina estilo del header*/
+/*Empieza estilo del main*/
+main{
+    display: flex;
+    height: 700px; /*Altura del main*/
+    justify-content: center;
+    align-items: center;
 }
+/*Termina estilo del main*/
+/*Empieza estilo card*/
 .card{
-    background-color: rgb(158, 187, 214);
+    background-color: #dae0e9;
     box-shadow: 0 0 0.9375em rgba(0, 0, 0, 0.219);
-    width: 900px;
-    border-radius: 4px;
+    width: 1000px;
+    height: 600px;
+    border-radius: 10px;
     display: flex;
 }
-.card-hero{
+/*Empieza estilo card izquierda*/
+.card-left{
+    display: flex;
     flex: 0 0 50%;
     position: relative;
+    align-items: center;
 }
 .card-img{
     display: block;
     width: 100%;
 }
-.card-middle{
+.left-text{
     position: absolute;
     top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 30%;
+    transform: translate(-20%, -50%);
+    margin-top: 50px;
 }
-.card-middle-text{
-    background-color: transparent;
-    align-content: center;
+.ingresar{
+    text-align: center;
+    font-weight: normal;
+    font-size: 36px;
+    color: #595959;
 }
+.bienvenido{
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    color: #595959; 
+    margin-top: 20px;
+    margin-bottom: 211px;
+}
+.nuevo{
+    text-align: center;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 18px;
+    color: #595959;
+}
+.nuevo a{
+    text-decoration: none;
+    color: #595959;
+}
+.nuevo a:hover{
+    text-decoration: underline;
+}
+/*Termina estilo card izquierda*/
+/*Empieza estilo card derecha*/
 /*Estilos a las entradas de texto*/
 .controls {
     width: 100%;
     border: 1px solid grey;
+    border-radius: 10px;
     margin-bottom: 15px;
     padding: 11px 10px;
     background: white;
@@ -130,12 +171,112 @@ button:hover{
     border-radius: 8px;
     margin-bottom: 16px;
 }
+.card-right{
+    flex:1;
+    padding: 70px 70px;
+    background-color: white;
+}
+.card-right h3 {
+    color: grey;
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
 /*Estilos al texto "¿Olvidó su contraseña?"*/
-.form-login a {
+.card-right a {
     color: rgb(0, 110, 255);
     text-decoration: none;
     font-size: 14px;
 }
-.form-login a:hover {
+.card-right a:hover {
     text-decoration: underline;
 }
+h4{
+    text-align: center;
+    color: grey;
+    font-weight: normal;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+}
+.space-c{
+    padding-left: 120px;
+}
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-media{
+    margin-bottom: 20px; 
+}
+.social-media li{
+    list-style: none;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 30%;
+    border-width: 1px;
+    border-color: #b9b8b8;
+    margin: 0 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.social-media li:hover{
+    background: #b9b8b8;
+    font-weight: bold; /*CHECAR*/
+}
+.social-media li img{
+    cursor: pointer;
+    width: 35px;
+    padding: 8px;
+}
+.media-title{
+    text-align: center ;
+}
+/*Termina estilo card derecha*/
+/*Empieza estilo footer*/
+footer{
+    background: rgb(35, 35, 51);
+}
+.footer-card{
+    display: flex;
+    justify-content: center;
+}
+.footer-card ul{
+    list-style-type: none;
+    margin: 25px 40px;
+    width: 160px;
+}
+.f-list li a{
+    text-decoration: none;
+    color: white;
+}
+.f-list li a:hover{
+    text-decoration: underline;
+}
+.list-title{
+    margin-bottom: 10px;
+}
+.f-low{
+    display: flex;
+    justify-content: center;
+}
+.f-low li{
+    display: inline-block;
+    padding: 0px 5px;
+    font-size: 10px;
+    color: white;
+    margin-bottom: 100px;
+}
+.f-low li a{
+    text-decoration: none;
+    color: white;
+}
+.f-low li a:hover{
+    text-decoration: underline;
+}
+/*Termina estilo footer*/
