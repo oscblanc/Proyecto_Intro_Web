@@ -1,3 +1,4 @@
+/*Empieza estilos generales*/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -9,6 +10,7 @@ body{
     font-weight: 600;
     background: white;
 }
+/*Termina estilos generales*/
 /*Empieza estilo del label gris superior*/
 .label1{
     display: flex;
@@ -21,6 +23,13 @@ body{
     text-decoration: none;
     color: white;
 }
+.extra__links{
+    list-style: none;
+}
+.extra__links li{
+    display: inline-block;
+    padding: 0px 10px;
+}
 /*Termina estilo del label gris superior*/
 /*Empieza estilo del header*/
 header{
@@ -32,6 +41,7 @@ header{
     border-color: rgb(163, 163, 163);
     border-width: 1px;
 }
+/*Empieza estilo logo zoom, soluciones y recursos*/
 .head-left{
     display: flex;
     align-items: center;
@@ -39,24 +49,17 @@ header{
 .head-left ul{
     display: inline-block;
 }
-/*Tamaño de imagen*/
 .logo{
     cursor: pointer;
-    /* margin-right: auto; */
-    width: 120px;
+    width: 120px; /*Tamaño de imagen Zoom*/
     float: left;
-    padding: 0px 10px;
-}
-.extra__links{
-    list-style: none;
-}
-.extra__links li{
-    display: inline-block;
     padding: 0px 10px;
 }
 .nav__links1{
     list-style: none;
 }
+/*Termina estilo logo zoom, soluciones y recursos*/
+/*Empieza menu unirse, ser anfitrion e ingresar*/
 .nav__links2{
     list-style: none;
     padding: 0px 10px;
@@ -80,6 +83,8 @@ header{
 .nav__links1 li a:hover{
     color: rgb(0, 110, 255);
 }
+/*Termina menu unirse, ser anfitrion e ingresar*/
+/*Empieza estilo botón*/
 button{
     margin-left: 5px;
     padding: 8px 17px;
@@ -93,6 +98,7 @@ button{
 button:hover{
     background-color: rgb(214, 79, 0);
 }
+/*Termina estilo botón*/
 /*Termina estilo del header*/
 /*Empieza estilo del main*/
 main{
@@ -169,7 +175,7 @@ main{
     background: white;
     font-size: 14px;
 }
-/*Estilos al botón del botón enviar*/
+/*Estilos al botón ingresar*/
 .button2 {
     width: 100%;
     height: 40px;
@@ -209,6 +215,7 @@ h4{
 .space-c{
     padding-left: 120px;
 }
+/*Empieza estilo para componente de redes sociales*/
 .social-media{
     display: flex;
     justify-content: center;
@@ -247,6 +254,7 @@ h4{
 .media-title{
     text-align: center ;
 }
+/*Termina estilo para componente de redes sociales*/
 /*Termina estilo card derecha*/
 /*Empieza estilo footer*/
 footer{
@@ -271,8 +279,38 @@ footer{
 .list-title{
     margin-bottom: 10px;
 }
+/*Empieza estilo caja idiomas*/
+.dropdown-container{
+    position:relative;
+    margin-bottom: 30px;
+    color: white;
+    border: white;
+    border-style: solid;
+    border-width: 1px;
+    padding: 2px 2px;
+}
+.dropdown-container ul{
+    position: absolute;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 1s;
+    list-style-type: none;
+    left: 0px;
+    padding: 0px;
+    top: 0.8em;
+}
+.dropdown-container ul li{
+    width: 200px;
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+.dropdown-container:hover ul{
+    max-height: 400px;
+}
+/*Termina estilo caja idiomas*/
 
-
+/*Empieza estilo componente redes sociales 2 para footer */
 .social-media2{
     display: flex;
     justify-content: center;
@@ -318,8 +356,8 @@ footer{
 .Instagram li:hover{
     background: #033A7D;
 }
-
-
+/*Termina estilo componente redes sociales 2 para footer */
+/*Empieza estilo footer del footer */
 .f-low{
     display: flex;
     justify-content: center;
@@ -338,4 +376,5 @@ footer{
 .f-low li a:hover{
     text-decoration: underline;
 }
+/*Termina estilo footer del footer */
 /*Termina estilo footer*/
